@@ -202,6 +202,7 @@
 				TargetAttributes = {
 					3DCE74C21BECB2E800985E03 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 9L2H2A796T;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 1;
@@ -398,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9L2H2A796T;
 				INFOPLIST_FILE = TGLAugmentedRealityExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gleue-interactive.TGLAugmentedRealityExample";
@@ -409,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9L2H2A796T;
 				INFOPLIST_FILE = TGLAugmentedRealityExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gleue-interactive.TGLAugmentedRealityExample";
