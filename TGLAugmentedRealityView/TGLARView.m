@@ -463,6 +463,8 @@ static const CGFloat kFOVARViewLensAdjustmentFactor = 0.05;
 
 - (void)reloadData {
 
+    [self updateProjectionMatrix];
+    
     NSMutableArray<TGLARViewOverlay *> *overlayViews = [NSMutableArray array];
     NSMutableArray<TGLARShapeOverlay *> *overlayShapes = [NSMutableArray array];
 
