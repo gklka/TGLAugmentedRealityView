@@ -516,7 +516,12 @@ static const CGFloat kFOVARViewLensAdjustmentFactor = 0.05;
     
     AVCaptureDeviceInput *newVideoInput = [[AVCaptureDeviceInput alloc] initWithDevice:self.captureDevice error:nil];
     
-    [self.captureSession addInput:newVideoInput];
+    if ([self.captureSession canAddInput:newVideoInput]) {
+        [self.captureSession addInput:newVideoInput];
+    } else {
+        NSLog(@"TGLARView error: Can't add input %@", newVideoInput);
+        return;
+    }
     
     self.captureLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:self.captureSession];
     self.captureLayer.frame = self.captureView.bounds;
